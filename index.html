@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">ShopEasy</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container mt-4">
+        <div class="row align-items-center bg-primary-subtle rounded-4 p-4">
+            <div class="col-md-7">
+                <span class="badge bg-primary mb-3">WELCOME TO SHOPEASY</span>
+                <h1 class="fw-bold text-primary">Shopping Made Simple!</h1>
+                <p class="text-secondary fs-5">
+                    Discover your favourite products at amazing prices.
+                </p>
+                <a href="#products" class="btn btn-primary px-4">
+                    Shop Now
+                </a>
+            </div>
+
+            <div class="col-md-5 text-center mt-3 mt-md-0">
+                <img src="banner.png"
+                     class="img-fluid rounded-3"
+                     alt="Shopping Banner">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-lg-3 mb-4" id="categories">
+                <div class="bg-white p-4 rounded-4 shadow-sm">
+                    <h4 class="text-primary fw-bold">Categories</h4>
+                    <hr>
+
+                    <div class="list-group">
+                        <a href="#products" class="list-group-item list-group-item-action">
+                            Electronics
+                        </a>
+                        <a href="#products" class="list-group-item list-group-item-action">
+                            Clothing
+                        </a>
+                        <a href="#products" class="list-group-item list-group-item-action">
+                            Books
+                        </a>
+                        <a href="#products" class="list-group-item list-group-item-action">
+                            Home & Kitchen
+                        </a>
+                        <a href="#products" class="list-group-item list-group-item-action">
+                            Sports
+                        </a>
+                        <a href="#products" class="list-group-item list-group-item-action">
+                            Accessories
+                        </a>
+                    </div>
+
+                    <div class="bg-warning-subtle p-3 rounded-3 mt-4">
+                        <h6 class="fw-bold">Special Offer!</h6>
+                        <p class="small mb-0">
+                            Discover amazing deals on your favourite products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="col-lg-9" id="products">
+
+                <div class="mb-4">
+                    <h2 class="fw-bold">Featured Products</h2>
+                    <p class="text-secondary">
+                        Explore our popular collection
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Laptop -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="screen.png"
+                                 class="card-img-top img-fluid"
+                                 alt="Laptop">
+
+                            <div class="card-body text-center">
+                                <span class="badge bg-primary-subtle text-primary mb-2">
+                                    Electronics
+                                </span>
+                                <h5 class="fw-bold">Laptop</h5>
+                                <p class="text-success fw-bold fs-5">₹45,990</p>
+                                <button class="btn btn-primary w-100"
+                                        onclick="addCart('Laptop')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smartphone -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="laptop.png"
+                                 class="card-img-top img-fluid"
+                                 alt="Smartphone">
+
+                            <div class="card-body text-center">
+                                <span class="badge bg-danger-subtle text-danger mb-2">
+                                    Electronics
+                                </span>
+                                <h5 class="fw-bold">Smartphone</h5>
+                                <p class="text-success fw-bold fs-5">₹19,999</p>
+                                <button class="btn btn-primary w-100"
+                                        onclick="addCart('Smartphone')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sports Shoes -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="shoes.png"
+                                 class="card-img-top img-fluid"
+                                 alt="Sports Shoes">
+
+                            <div class="card-body text-center">
+                                <span class="badge bg-success-subtle text-success mb-2">
+                                    Footwear
+                                </span>
+                                <h5 class="fw-bold">Sports Shoes</h5>
+                                <p class="text-success fw-bold fs-5">₹3,499</p>
+                                <button class="btn btn-primary w-100"
+                                        onclick="addCart('Sports Shoes')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Watch -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="watch.png"
+                                 class="card-img-top img-fluid"
+                                 alt="Smart Watch">
+
+                            <div class="card-body text-center">
+                                <span class="badge bg-warning-subtle text-dark mb-2">
+                                    Accessories
+                                </span>
+                                <h5 class="fw-bold">Smart Watch</h5>
+                                <p class="text-success fw-bold fs-5">₹8,999</p>
+                                <button class="btn btn-primary w-100"
+                                        onclick="addCart('Smart Watch')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5" id="footer">
+        <div class="container">
+            <h4 class="fw-bold">ShopEasy</h4>
+            <p class="text-white-50">
+                Your favourite products, all in one place.
+            </p>
+            <hr>
+            <small>© 2026 ShopEasy. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function addCart(product) {
+            alert(product + " added to cart!");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
